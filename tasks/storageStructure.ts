@@ -60,12 +60,13 @@ task("getMappingValue", "Get mapping value")
 
     const value = await hre.ethers.provider.getStorageAt(address, location);
     console.log(
-      `Contract ${address}'s ${taskArgs.slot}th mapping with key ${key} is stored at location ${location}, value is ${value}`
+      `Contract ${address}'s ${taskArgs.slot}th mapping with key ${key} is stored at location ${location} \nValue is ${value}`
     );
   });
 
 task("keccak256", "Get keccak256 hash").setAction(async (_, hre) => {
-  const input = 1;
+  const input =
+    "0x89832631fb3c3307a103ba2c84ab569c64d6182a18893dcd163f0f1c2090733a";
 
   const hash = hre.ethers.utils.solidityKeccak256(["uint256"], [input]);
   console.log(`keccak256 hash of ${input} is ${hash}`);

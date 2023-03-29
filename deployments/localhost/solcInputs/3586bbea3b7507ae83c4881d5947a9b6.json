@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/StandardProxy/StandardImpl.sol": {
+      "content": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.10;\n\ncontract StandardImpl {\n    uint256 public constant VERSION = 1;\n\n    bool public initialized;\n\n    uint256 public value;\n\n    modifier initializer() {\n        require(!initialized, \"Only initialize once\");\n        _;\n        initialized = true;\n    }\n\n    function initialize(uint256 _initValue) public initializer {\n        value = _initValue;\n    }\n\n    function setValue(uint256 _newValue) public {\n        value = _newValue;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

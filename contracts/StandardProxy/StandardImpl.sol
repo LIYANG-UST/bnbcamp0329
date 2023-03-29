@@ -3,6 +3,9 @@
 pragma solidity ^0.8.10;
 
 contract StandardImpl {
+    // uint256 public constant VERSION = 1;
+    uint256 public constant VERSION = 2;
+
     bool public initialized;
 
     uint256 public value;
@@ -18,6 +21,6 @@ contract StandardImpl {
     }
 
     function setValue(uint256 _newValue) public {
-        value = _newValue;
+        value = _newValue + 10;
     }
 }

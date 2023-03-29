@@ -1,13 +1,17 @@
 import { task, types } from "hardhat/config";
+import { readAddressList } from "../scripts/helper";
 
 task("getStorageAt", "Get value at a specific storage slot")
-  .addParam("address", "The address to query", null, types.string)
   .addParam("slot", "The storage slot to query", 0, types.string)
   .setAction(async (taskArgs, hre) => {
-    const address = taskArgs.address;
+    const { network } = hre;
+
     const slot = hre.ethers.utils.hexValue(
       hre.ethers.BigNumber.from(taskArgs.slot)
     );
+
+    const addressList = readAddressList();
+    const address = addressList[network.name].StorageStructure;
 
     const value = await hre.ethers.provider.getStorageAt(address, slot);
     console.log(`Contract ${address} at slot ${slot} is ${value}`);
@@ -38,20 +42,23 @@ task("getMappingLocation", "Get mapping storage location")
   });
 
 task("getMappingValue", "Get mapping value")
-  .addParam("address", "The address to query", null, types.string)
-  .addParam("key", "The mapping key to query", null, types.string)
   .addParam(
     "slot",
     "The storage slot of the mapping definition",
     0,
     types.string
   )
+  .addParam("key", "The mapping key to query", null, types.string)
   .setAction(async (taskArgs, hre) => {
-    const address = taskArgs.address;
+    const { network } = hre;
+
     const key = taskArgs.key;
     const slot = hre.ethers.utils.hexValue(
       hre.ethers.BigNumber.from(taskArgs.slot)
     );
+
+    const addressList = readAddressList();
+    const address = addressList[network.name].StorageStructure;
 
     const location = hre.ethers.utils.solidityKeccak256(
       ["uint256", "uint256"],

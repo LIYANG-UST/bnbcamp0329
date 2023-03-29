@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.10;
 
-contract Impl {
+contract StandardImpl {
     bool public initialized;
 
     uint256 public value;

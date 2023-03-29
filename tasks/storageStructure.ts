@@ -60,7 +60,7 @@ task("getMappingValue", "Get mapping value")
 
     const value = await hre.ethers.provider.getStorageAt(address, location);
     console.log(
-      `Contract ${address}'s ${slot}'s mapping with key ${key} is stored at location ${location}, value is ${value}`
+      `Contract ${address}'s ${taskArgs.slot}th mapping with key ${key} is stored at location ${location}, value is ${value}`
     );
   });
 

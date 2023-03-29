@@ -1,0 +1,245 @@
+{
+  "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "hashValue",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "names",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "number",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "numbers",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "shortNumberA",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "shortNumberB",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "shortNumberC",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xed126fbe47246a409dbfa0019adaf9096299ccad1c6a579c4586217fc6ce9341",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+    "transactionIndex": 0,
+    "gasUsed": "418432",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x9c5c6734f1fa1e9b42efa3ccea60b59435a82a5dc7e78a73a7b4b8ab0c86c4b8",
+    "transactionHash": "0xed126fbe47246a409dbfa0019adaf9096299ccad1c6a579c4586217fc6ce9341",
+    "logs": [],
+    "blockNumber": 4,
+    "cumulativeGasUsed": "418432",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "0d42f319372aa6403e81913e7cf197ac",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"hashValue\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"names\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"number\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"numbers\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"shortNumberA\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"shortNumberB\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"shortNumberC\",\"outputs\":[{\"internalType\":\"uint128\",\"name\":\"\",\"type\":\"uint128\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/StorageStructure/StorageStructure.sol\":\"StorageStructure\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/StorageStructure/StorageStructure.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.10;\\n\\ncontract StorageStructure {\\n    // Slot 0\\n    uint256 public number;\\n\\n    // Slot 1\\n    bytes32 public hashValue;\\n\\n    // Slot 2 & 3\\n    uint256[2] public numbers = [1, 2];\\n\\n    // Slot 4\\n    uint8 public shortNumberA;\\n    uint8 public shortNumberB;\\n    uint128 public shortNumberC;\\n\\n    // Slot 5 is empty\\n    // Value location for \\\"key\\\" is keccak256(key.slot)\\n    mapping(uint256 => string) public names;\\n\\n    constructor() {\\n        number = 1;\\n        hashValue = keccak256(abi.encodePacked(number));\\n        names[1] = \\\"alice\\\";\\n        names[2] = \\\"I am a very long name, and I am longer than 31 bytes\\\";\\n        shortNumberA = 1;\\n        shortNumberB = 2;\\n        shortNumberC = 20;\\n    }\\n}\\n\\ncontract StringStorage {\\n    string a = unicode\\\"\\u6211\\u6bd4\\u8f83\\u77ed\\\";\\n    string b = unicode\\\"\\u6211\\u7279\\u522b\\u7279\\u522b\\u957f\\uff0c\\u5df2\\u7ecf\\u8d85\\u8fc7\\u4e86\\u4e00\\u4e2a\\u63d2\\u69fd\\u5b58\\u50a8\\u91cf\\\";\\n}\\n\",\"keccak256\":\"0xbc0c3165488d9e9abd71873307423b9b34404b169922a9a91bebdc7c5558bbb3\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60c060405260016080908152600260a081905261001c9181610111565b5034801561002957600080fd5b50600160008190556040805160208101929092520160408051601f1981840301815282825280516020918201206001908155838301909252600580845264616c69636560d81b84830152600092909252527f1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017b906100a69082610208565b5060405180606001604052806034815260200161059a60349139600260005260056020527f89832631fb3c3307a103ba2c84ab569c64d6182a18893dcd163f0f1c2090733a906100f69082610208565b50600480546001600160901b031916621402011790556102c7565b8260028101928215610144579160200282015b82811115610144578251829060ff16905591602001919060010190610124565b50610150929150610154565b5090565b5b808211156101505760008155600101610155565b634e487b7160e01b600052604160045260246000fd5b600181811c9082168061019357607f821691505b6020821081036101b357634e487b7160e01b600052602260045260246000fd5b50919050565b601f82111561020357600081815260208120601f850160051c810160208610156101e05750805b601f850160051c820191505b818110156101ff578281556001016101ec565b5050505b505050565b81516001600160401b0381111561022157610221610169565b6102358161022f845461017f565b846101b9565b602080601f83116001811461026a57600084156102525750858301515b600019600386901b1c1916600185901b1785556101ff565b600085815260208120601f198616915b828110156102995788860151825594840194600190910190840161027a565b50858210156102b75787850151600019600388901b60f8161c191681555b5050505050600190811b01905550565b6102c4806102d66000396000f3fe608060405234801561001057600080fd5b506004361061007d5760003560e01c80638381f58a1161005b5780638381f58a146100dd578063d39fa233146100e6578063ebb573ac146100f9578063f42cb06a1461012a57600080fd5b80632b92b8e5146100825780634622ab031461009e57806360c3a7e0146100be575b600080fd5b61008b60015481565b6040519081526020015b60405180910390f35b6100b16100ac3660046101ed565b61013c565b6040516100959190610206565b6004546100cb9060ff1681565b60405160ff9091168152602001610095565b61008b60005481565b61008b6100f43660046101ed565b6101d6565b600454610112906201000090046001600160801b031681565b6040516001600160801b039091168152602001610095565b6004546100cb90610100900460ff1681565b6005602052600090815260409020805461015590610254565b80601f016020809104026020016040519081016040528092919081815260200182805461018190610254565b80156101ce5780601f106101a3576101008083540402835291602001916101ce565b820191906000526020600020905b8154815290600101906020018083116101b157829003601f168201915b505050505081565b600281600281106101e657600080fd5b0154905081565b6000602082840312156101ff57600080fd5b5035919050565b600060208083528351808285015260005b8181101561023357858101830151858201604001528201610217565b506000604082860101526040601f19601f8301168501019250505092915050565b600181811c9082168061026857607f821691505b60208210810361028857634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220c01cc7f6186a3eba53cdb3a13f1f7b98739c861eeb352109ec22dadee467019d64736f6c634300081300334920616d20612076657279206c6f6e67206e616d652c20616e64204920616d206c6f6e676572207468616e203331206279746573",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061007d5760003560e01c80638381f58a1161005b5780638381f58a146100dd578063d39fa233146100e6578063ebb573ac146100f9578063f42cb06a1461012a57600080fd5b80632b92b8e5146100825780634622ab031461009e57806360c3a7e0146100be575b600080fd5b61008b60015481565b6040519081526020015b60405180910390f35b6100b16100ac3660046101ed565b61013c565b6040516100959190610206565b6004546100cb9060ff1681565b60405160ff9091168152602001610095565b61008b60005481565b61008b6100f43660046101ed565b6101d6565b600454610112906201000090046001600160801b031681565b6040516001600160801b039091168152602001610095565b6004546100cb90610100900460ff1681565b6005602052600090815260409020805461015590610254565b80601f016020809104026020016040519081016040528092919081815260200182805461018190610254565b80156101ce5780601f106101a3576101008083540402835291602001916101ce565b820191906000526020600020905b8154815290600101906020018083116101b157829003601f168201915b505050505081565b600281600281106101e657600080fd5b0154905081565b6000602082840312156101ff57600080fd5b5035919050565b600060208083528351808285015260005b8181101561023357858101830151858201604001528201610217565b506000604082860101526040601f19601f8301168501019250505092915050565b600181811c9082168061026857607f821691505b60208210810361028857634e487b7160e01b600052602260045260246000fd5b5091905056fea2646970667358221220c01cc7f6186a3eba53cdb3a13f1f7b98739c861eeb352109ec22dadee467019d64736f6c63430008130033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 1472,
+        "contract": "contracts/StorageStructure/StorageStructure.sol:StorageStructure",
+        "label": "number",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 1474,
+        "contract": "contracts/StorageStructure/StorageStructure.sol:StorageStructure",
+        "label": "hashValue",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_bytes32"
+      },
+      {
+        "astId": 1481,
+        "contract": "contracts/StorageStructure/StorageStructure.sol:StorageStructure",
+        "label": "numbers",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_array(t_uint256)2_storage"
+      },
+      {
+        "astId": 1483,
+        "contract": "contracts/StorageStructure/StorageStructure.sol:StorageStructure",
+        "label": "shortNumberA",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint8"
+      },
+      {
+        "astId": 1485,
+        "contract": "contracts/StorageStructure/StorageStructure.sol:StorageStructure",
+        "label": "shortNumberB",
+        "offset": 1,
+        "slot": "4",
+        "type": "t_uint8"
+      },
+      {
+        "astId": 1487,
+        "contract": "contracts/StorageStructure/StorageStructure.sol:StorageStructure",
+        "label": "shortNumberC",
+        "offset": 2,
+        "slot": "4",
+        "type": "t_uint128"
+      },
+      {
+        "astId": 1491,
+        "contract": "contracts/StorageStructure/StorageStructure.sol:StorageStructure",
+        "label": "names",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_mapping(t_uint256,t_string_storage)"
+      }
+    ],
+    "types": {
+      "t_array(t_uint256)2_storage": {
+        "base": "t_uint256",
+        "encoding": "inplace",
+        "label": "uint256[2]",
+        "numberOfBytes": "64"
+      },
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_mapping(t_uint256,t_string_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => string)",
+        "numberOfBytes": "32",
+        "value": "t_string_storage"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_uint128": {
+        "encoding": "inplace",
+        "label": "uint128",
+        "numberOfBytes": "16"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      },
+      "t_uint8": {
+        "encoding": "inplace",
+        "label": "uint8",
+        "numberOfBytes": "1"
+      }
+    }
+  }
+}

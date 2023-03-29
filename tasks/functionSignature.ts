@@ -12,17 +12,29 @@ task("getFunctionSelector", "Get function selector")
       .slice(0, 10);
     console.log(`Function ${func} selector is ${selector}`);
 
-    const fullFunc = "function " + func;
-
+    const fullFunc = "function " + taskArgs.func;
     const contractInterface = new hre.ethers.utils.Interface([fullFunc]);
-    const selctorFromContract = contractInterface.getSighash(func);
+    const selctorFromContract = contractInterface.getSighash(fullFunc);
     console.log(
       `Function ${func} selector from contract is ${selctorFromContract}`
     );
+  });
 
-    const encodedCalldata = contractInterface.encodeFunctionData(func, [
-      hre.ethers.constants.AddressZero,
-      456,
-    ]);
+// npx hardhat getFunctionCalldata --network localhost --func "approve(address,uint256)" "0x32eB34d060c12aD0491d260c436d30e5fB13a8Cd" 100
+task("getFunctionCalldata", "Get function calldata")
+  .addParam("func", "Function name and parameters", null, types.string)
+  .addVariadicPositionalParam("params", "Function parameters")
+  .setAction(async (taskArgs, hre) => {
+    const func = "function " + taskArgs.func;
+    const params = taskArgs.params;
+
+    console.log("func: ", func);
+    console.log("params: ", params);
+
+    const contractInterface = new hre.ethers.utils.Interface([func]);
+    const encodedCalldata = contractInterface.encodeFunctionData(
+      taskArgs.func,
+      params
+    );
     console.log(`Encoded calldata is ${encodedCalldata}`);
   });

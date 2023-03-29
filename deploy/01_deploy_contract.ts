@@ -13,15 +13,18 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     proxyContract: "TransparentUpgradeableProxy",
     viaAdminContract: "ProxyAdmin",
     execute: {
+      // 只在初始化时执行
       init: {
+        // 执行initialize方法
         methodName: "initialize",
+        // 参数
         args: [1],
       },
     },
   };
 
-  const myContract = await deploy("Impl", {
-    contract: "Impl",
+  const myContract = await deploy("StandardImpl", {
+    contract: "StandardImpl",
     from: deployer,
     proxy: proxyOptions,
     args: [],
@@ -32,5 +35,6 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   console.log("Implementation deployed to:", myContract.implementation);
 };
 
+// npx hardhat deploy --network {network} --tags {Tag}
 func.tags = ["MyContract"];
 export default func;
